@@ -160,6 +160,10 @@ ul, ol { list-style: none; }
 .investgold span:last-child input{ padding: 0.08rem; font-size:0.26rem; width: 100%; }
 .expect{ height:0.85rem; line-height: 0.85rem; text-align: right; font-size: 0.20rem; color:#9c9c9c; }
 .shortcut{ background: #fff; padding-top: 0.25rem; padding-bottom: 0.25rem; color: #515151;}
-.shortcut > span{ display: block; margin-bottom: 0.33rem; text-align: left; font-size: 0.28rem;}
+.shortcut > span:nth-of-type(1){ display: block; margin-bottom: 0.33rem; text-align: left; font-size: 0.28rem;}
+.shortcut > span:nth-of-type(2){ display: block; font-size: 0.20rem; color: #9b9a9a; margin-bottom: 0.15rem;}
 .shortcut .banknumber li{ display: inline-block; width: 2.15rem; height: 0.60rem;}
 .shortcut .banknumber li .banklogo{ width: 0.62rem; height: 0.58rem; float: left; margin-right:0.13rem; ;}
+.shortcut .banknumber li .banktext{ color: #515151; font-size: 0.22rem; line-height: 1.5;}
+.limittips{ height: 0.55rem; line-height: 0.55rem; font-size: 0.20rem; }
+.limittips i{ display: inline-block; vertical-align: middle; width: 0.19rem; height: 0.19rem; margin-right: 0.15rem; background: url("../image/icon_tips.png") no-repeat; background-size: cover;}
