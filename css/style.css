@@ -17,6 +17,7 @@ input{-webkit-appearance: none;}
 .maxA{ bottom: 0.9rem;}
 .btn{ width: 100%; height: 0.90rem; line-height: 0.90rem; color: #fff; font-size: 0.30rem; text-align: center; background:#fe6246; position: fixed; bottom: 0; }
 .confirm{ margin: 0.40rem 0.22rem 0.45rem 0.22rem; height: 0.90rem; line-height: 0.90rem; color: #fff; font-size: 0.30rem; text-align: center; background:#fe6246;  border-radius: 10px; display: block;}
+.confirmblut{ margin: 0 0.22rem;height: 0.90rem; line-height: 0.90rem; color: #fff; font-size: 0.30rem; text-align: center; background:#2864b3;  border-radius: 10px; display: block; letter-spacing: 10px;}
 .notice{ width: 100%; height: 0.82rem; background: #fff; border-bottom: solid 1px #d8d6d6; text-align: left; font-size: 0.26rem; color: #656565; position: relative; overflow: hidden;}
 .notice > span{ width: 0.27rem; height: 0.25rem; position: absolute; left:0.23rem; top:0.28rem; }
 .notice .notice_scroll{ margin-left: 0.65rem;}
@@ -115,3 +116,16 @@ input{-webkit-appearance: none;}
 .depbank li span:first-child{display: inline-block; width: 1.97rem;}
 .depbank li .arrow{ right: 0.40rem}
 
+/*登录注册*/
+.login_page{ background: url("../image/loginbg.jpg") no-repeat; background-size: cover;}
+.logo{ width: 2.95rem; height: 0.85rem; margin: 0.83rem  auto 1.03rem auto;}
+.login_main{ margin: 0 0.22rem;}
+.login_main li{ height:0.76rem; line-height: 0.76rem; padding: 0 0.22rem; color: #5f7ba0; font-size: 0.24rem; padding: 0 0.2rem; border-bottom: solid 1px #5f7ba0;}
+.login_main li span:first-child{ display: block; width: 1.26rem; float: left;}
+.login_main li span:last-child{ display: block; margin-left: 1.26rem;}
+.login_main li span input{ width: 100%; background: transparent; outline: none; border: none;}
+.login_page .login_quick{ margin: 0.40rem 0.22rem 0.15rem 0.22rem; height: 0.50rem; line-height: 0.50rem; display: flex; flex-wrap: nowrap; flex-direction: row; justify-content: space-between; font-size: 0.22rem;}
+.login_page .login_quick li:first-child a{ color: #2864b3}
+.login_page .login_quick li:last-child a{ color: #5f7ba0}
+.login_page .code{ width: 1.76rem; height: 1.76rem; margin: 0.86rem auto 0.20rem auto;}
+.login_page .text{ width:3.55rem; margin: 0 auto; }
