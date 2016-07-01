@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta id="viewport" name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>中外建金融</title>
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/adaptive.js"></script><!--适配js-->
+    <script type="text/javascript" src="js/zepto.js"></script>
+    <script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
+</head>
+<body>
+<div class="main maxH">
+    <!--总资产-->
+    <div class="total_assets">
+        <span class="assets"><small>总资产（元）</small>1,000.48</span>
+        <ul class="earnings">
+            <li>累计收益（元）<br>
+                <span>100.48</span></li>
+            <li>预期收益（元）<br>
+                <span>100.48</span></li>
+        </ul>
+    </div>
+    <!--总资产-->
+    <div class="tabs">
+        <a href="#" class="active">投资中</a>
+        <a href="#">已到期</a>
+    </div>
+    <div id="tabs-container" class="tabs-list">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="investing">
+                    <ul class="tab-con tab-top">
+                        <li>定期91天<small>到期日期：2016-05-01</small> </li>
+                        <li><a href="#">到期设置</a></li>
+                    </ul>
+                    <ul class="tab-con tab-bottom">
+                        <li><span><span>投资金额（元）</span>3000</span></li>
+                        <li><span><span>预期年化</span>8.30<small>%</small></span></li>
+                        <li><span><span>预期收益</span>3000</span></li>
+                    </ul>
+                </div>
+                <div class="investing">
+                    <ul class="tab-con tab-top">
+                        <li>定期182天<small>到期日期：2016-05-01</small> </li>
+                        <li><a href="#">到期设置</a></li>
+                    </ul>
+                    <ul class="tab-con tab-bottom">
+                        <li><span><span>投资金额（元）</span>3000</span></li>
+                        <li><span><span>预期年化</span>8.30<small>%</small></span></li>
+                        <li><span><span>预期收益</span>3000</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-slide">
+
+            </div>
+        </div>
+    </div>
+</div><!--main-->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            autoplay: 3000,
+            autoplayDisableOnInteraction: false, //每次都会重新启动autoplay
+            loop: "ture"
+        });
+        var tabsSwiper = new Swiper('#tabs-container',{
+            speed:500,
+            onSlideChangeStart: function(){
+                $(".tabs .active").removeClass('active')
+                $(".tabs a").eq(tabsSwiper.activeIndex).addClass('active')
+            }
+        })
+        $(".tabs a").on('touchstart mousedown',function(e){
+            e.preventDefault()
+            $(".tabs .active").removeClass('active')
+            $(this).addClass('active')
+            tabsSwiper.slideTo( $(this).index() )
+        })
+        $(".tabs a").click(function(e){
+            e.preventDefault()
+        })
+
+    </script>
+</body>
+</html>

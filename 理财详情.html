@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta id="viewport" name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>中外建金融</title>
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/adaptive.js"></script><!--适配js-->
+    <script type="text/javascript" src="js/zepto.js"></script>
+    <script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
+</head>
+<body>
+<div class="main maxA">
+    <div class="seven_tiyan">
+       <!-- <img src="image/seven.jpg">-->
+        <span class="newbie">新手七天体验</span>
+        <span class="interest">12.80<small>%</small><span>预期年化</span></span>
+        <ul class="limiting">
+            <li><i></i>仅限首投</li>
+            <li><i></i>超高收益</li>
+            <li><i></i>封闭期(7天)</li>
+        </ul>
+    </div>
+    <div class="pros">
+        <a href="#" class="active">产品详情</a><a href="#">到期赎回</a><a href="#">还款计划</a>
+    </div>
+    <div id="tabs-container" class="pro-list">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <span class="title">定期宝介绍1</span>
+                <ul class="pro-con">
+                    <li><i>●</i><span>起投金额100元，无固定投资金额，投资不上线。</span></li>
+                    <li><i>●</i><span>到期一次性本息兑回，需选择到期处理方式，续投、转到银行卡，如用户到期未设置，为了降低用户的损失，用户本次投资的本息将自动续投。</span></li>
+                </ul>
+                <span class="title">定期宝三大优势</span>
+                <ul class="pro-con">
+                    <li><i>●</i><span>8.00%以上稳定年化收益;</span></li>
+                    <li><i>●</i><span>产品无购买上限，想买多少买多少;</span></li>
+                    <li><i>●</i><span>买入当日开始计息，不浪费您任何一秒投资时间。</span></li>
+                </ul>
+                <span class="title">定期宝三大优势</span>
+                <ul class="pro-con">
+                    <li><i>●</i><span>8.00%以上稳定年化收益;</span></li>
+                    <li><i>●</i><span>产品无购买上限，想买多少买多少;</span></li>
+                    <li><i>●</i><span>买入当日开始计息，不浪费您任何一秒投资时间。</span></li>
+                </ul>
+            </div>
+            <div class="swiper-slide">
+                dd
+            </div>
+            <div class="swiper-slide">
+                ss
+            </div>
+        </div>
+    </div>
+    <span class="risk">市场有风险，投资需谨慎</span>
+</div><!--main-->
+<a href="#" class="btn">立即投资</a>
+    <script>
+        var tabsSwiper = new Swiper('#tabs-container',{
+            speed:500,
+            onSlideChangeStart: function(){
+                $(".pros .active").removeClass('active')
+                $(".pros a").eq(tabsSwiper.activeIndex).addClass('active')
+            }
+        })
+        $(".pros a").on('touchstart mousedown',function(e){
+            e.preventDefault()
+            $(".pros .active").removeClass('active')
+            $(this).addClass('active')
+            tabsSwiper.slideTo( $(this).index() )
+        })
+        $(".pros a").click(function(e){
+            e.preventDefault()
+        })
+
+    </script>
+</body>
+</html>

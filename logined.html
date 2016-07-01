@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta id="viewport" name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>中外建金融</title>
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/adaptive.js"></script><!--适配js-->
+    <script type="text/javascript" src="js/zepto.js"></script>
+    <script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
+</head>
+<body>
+<div class="main">
+    <!--总资产-->
+    <div class="total_assets">
+        <a href="#" class="set icon_set">设置</a>
+        <span class="assets"><small>总资产（元）</small>1,000.48</span>
+        <ul class="earnings">
+            <li>累计收益（元）<br>
+                <span>100.48</span></li>
+            <li>预期收益（元）<br>
+                <span>100.48</span></li>
+        </ul>
+    </div>
+    <!--总资产-->
+    <div class="notice">
+        <span><img src="image/icon_notice.png"></span>
+        <div class="notice-container swiper-container-vertical notice_scroll">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide"><a href="#">建安金融推送公告1</a></li>
+                <li class="swiper-slide"><a href="#">建安金融推送公告2</a></li>
+                <li class="swiper-slide"><a href="#">建安金融推送公告3</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="firstbid">
+        <img src="image/tiyan.jpg">
+    </div>
+    <ul class="regular">
+        <li>
+            <span class="f1">定期宝-7天</span>
+            <span class="f2">预期年化</span>
+            <span class="f3">8.30<small>%</small></span>
+        </li>
+        <li>
+            <span class="f2">投资期限</span>
+            <span class="f3">7<small>天</small></span>
+        </li>
+        <li>
+            <a href="#" class="f4">投资</a>
+        </li>
+    </ul>
+    <ul class="regular">
+        <li>
+            <span class="f1">定期宝-7天</span>
+            <span class="f2">预期年化</span>
+            <span class="f3">8.30<small>%</small></span>
+        </li>
+        <li>
+            <span class="f2">投资期限</span>
+            <span class="f3">7<small>天</small></span>
+        </li>
+        <li>
+            <a href="#" class="f4">投资</a>
+        </li>
+    </ul>
+    <div class="weixincode">
+       <span>微信号：中外建金融&nbsp;&nbsp;&nbsp;ID：zhongwaijian</span>
+        <ul class="purpose">
+            <li>
+                <span><img src="image/icon_pur3.png"></span>
+                <span>政府项目<br>安心可靠</span>
+            </li>
+            <li>
+                <span><img src="image/icon_pur2.png"></span>
+                <span>严格风控<br>安全稳健</span>
+            </li>
+            <li>
+                <span><img src="image/icon_pur1.png"></span>
+                <span>投资安全<br>法律保障</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="foot">
+    <ul>
+        <li>
+            <a href="/index">
+                <img src="image/houseSelect.png">
+                <span class="btn2">首页</span>
+            </a>
+        </li>
+        <li>
+            <img src="image/coinNormal.png">
+            <span class="btn1">理财</span>
+        </li>
+        <li>
+            <img src="image/peopleNormal.png">
+            <span class="btn1">我的</span>
+        </li>
+    </ul>
+</div>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            autoplay: 3000,
+            autoplayDisableOnInteraction: false, //每次都会重新启动autoplay
+            loop: "ture"
+        });
+        var swiper = new Swiper('.notice-container', {
+            autoplay: 5000,
+            speed:1000,
+            direction : 'vertical',
+            autoplayDisableOnInteraction: false, //每次都会重新启动autoplay
+            loop: "ture"
+        });
+
+    </script>
+</body>
+</html>

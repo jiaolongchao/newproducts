@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>FlexBox</title>
+    <!--<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/zepto.js"></script>
+    <script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>-->
+    <style>
+        #tabs-container{
+            height:400px;
+        }
+        .tabs{
+            margin-top:20px;
+            background-size:auto 100%;
+            width:100%;
+            height:38px;
+            overflow:hidden;
+        }
+        .tabs a{
+            font-size: 1.125em;
+            font-weight: normal;
+            text-align: center;
+            float: left;
+            width: 64px;
+            height: 38px;
+            line-height: 38px;
+            color: #2a70be;
+        }
+        .tabs a.active {
+            margin-top: -2px;
+            background-repeat: no-repeat;
+            -webkit-background-size: 64px 39px;
+            -moz-background-size: 64px 39px;
+            -o-background-size: 64px 39px;
+            background-size: 64px 39px;
+            background-position: left top;
+            color: #c14545;
+        }
+        .news-list{
+            padding:0 10px;
+        }
+        .news-list li{
+            overflow: hidden;
+            border-bottom: 1px solid #eceef0;
+            box-shadow: 0 1px 1px #fff;
+            font-weight: normal;
+            height: 35px;
+            line-height: 35px;
+            font-size: 1.125em;
+        }
+    </style>
+</head>
+<body>
+<!--<div class="main">
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="image/banner2.jpg" ></a></div>
+            <div class="swiper-slide"><a href="#"><img src="image/banner3.jpg" ></a></div>
+            <div class="swiper-slide"><a href="#"><img src="image/banner4.jpg" ></a></div>
+            <div class="swiper-slide"><a href="#"><img src="image/banner5.jpg" ></a></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="tabs"> <a href="#" class="">新闻</a> <a href="#" class="">社会</a> <a href="#" class="active">军事</a> </div>
+    <div id="tabs-container" class="swiper-container-horizontal">
+        <div class="swiper-wrapper" style="transform: translate3d(-686px, 0px, 0px); transition-duration: 0ms;">
+            <div class="swiper-slide" style="width: 343px;">
+                <div class="content-slide">
+                    <ul class="news-list">
+                        <li>朝鲜逃兵越境杀4名中国人被捕</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-slide-prev" style="width: 343px;">
+                <div class="content-slide">
+                    <ul class="news-list">
+                        <li>巨型野生灵芝直径1米多</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="swiper-slide swiper-slide-active" style="width: 343px;">
+                <div class="content-slide"> <ul class="news-list">
+                    <li>韩国也山寨"机器大狗":能跑能跳</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        autoplay: 3000,
+        autoplayDisableOnInteraction : false, //每次都会重新启动autoplay
+        loop:"ture"
+    });
+
+    var tabsSwiper = new Swiper('#tabs-container',{
+        speed:500,
+        onSlideChangeStart: function(){
+            $(".tabs .active").removeClass('active')
+            $(".tabs a").eq(tabsSwiper.activeIndex).addClass('active')
+        }
+    })
+    $(".tabs a").on('touchstart mousedown',function(e){
+        e.preventDefault()
+        $(".tabs .active").removeClass('active')
+        $(this).addClass('active')
+        tabsSwiper.slideTo( $(this).index() )
+    })
+    $(".tabs a").click(function(e){
+        e.preventDefault()
+    })
+
+</script>
+-->
+<style>
+    *{list-style: none; margin: 0; padding: 0;}
+    #box{ width: 500px; margin: 100px auto; background: red;}
+    #box #box_list{ height: 300px; display: flex; flex-direction:row; flex-wrap:nowrap; /*flex-flow: row nowrap; 这是前两个的复合属性*/justify-content:flex-start;}
+    #box #box_list li{ background: yellow; padding: 10px; height: 200px;}
+    #box #box_list li:nth-child(2){ height: 100px}
+    #box #box_list li:nth-child(3){ height: 150px}
+</style>
+<div id="box">
+    <ul id="box_list">
+        <li>我是在左边</li>
+        <li>我是在中间</li>
+        <li>我是在右边</li>
+    </ul>
+</div>
+<select id="test_select" name="hobby" onchange="document.getElementById('box_list').style.justifyContent = this.value">
+    <option value="flex-start" selected="true">flex-start</option>
+    <option value="flex-end">flex-end</option>
+    <option value="center">center</option>
+    <option value="space-between">space-between</option>
+    <option value="space-around">space-around</option>
+</select>
+<select id="test_select2" name="hobby" onchange="document.getElementById('box_list').style.alignItems = this.value">
+    <option value="flex-start" selected="true">flex-start</option>
+    <option value="flex-end">flex-end</option>
+    <option value="center">center</option>
+    <option value="baseline">baseline</option>
+    <option value="stretch">stretch</option>
+</select>
+
+<style>
+    .control li:nth-last-child(odd){ background: red;}
+    .test p:nth-of-type(2){ background: deeppink}
+    .test p:first-child{ background: green}
+</style>
+<div class="control">
+   <ul>
+       <li>1a </li>
+       <li>2b </li>
+       <li>3c </li>
+       <li>4d </li>
+       <li>5e </li>
+   </ul>
+</div>
+<div class="test">
+    <span>span</span>
+    <p>abc</p>
+    <p>abc</p>
+    <p>abc</p>
+    <p>abc</p>
+    <p>abc</p>
+</div>
+</body>
+</html>

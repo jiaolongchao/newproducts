@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en"  style="background: #fff;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta id="viewport" name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>中外建金融</title>
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/adaptive.js"></script><!--适配js-->
+    <script type="text/javascript" src="js/zepto.js"></script>
+    <script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="title">定期产品</div>
+    <ul class="regular">
+        <li>
+            <span class="f1">定期宝-7天</span>
+            <span class="f2">预期年化</span>
+            <span class="f3">8.30<small>%</small></span>
+        </li>
+        <li>
+            <span class="f2">封闭期</span>
+            <span class="f3">7<small>天</small></span>
+        </li>
+        <li>
+            <a href="#" class="f4">投资</a>
+        </li>
+    </ul>
+    <ul class="regular">
+        <li>
+            <span class="f1">定期宝-91天</span>
+            <span class="f2">预期年化</span>
+            <span class="f3">8.30<small>%</small></span>
+        </li>
+        <li>
+            <span class="f2">封闭期</span>
+            <span class="f3">91<small>天</small></span>
+        </li>
+        <li>
+            <a href="#" class="f4">投资</a>
+        </li>
+    </ul>
+    <ul class="regular">
+        <li>
+            <span class="f1">定期宝-182天</span>
+            <span class="f2">预期年化</span>
+            <span class="f3">8.30<small>%</small></span>
+        </li>
+        <li>
+            <span class="f2">封闭期</span>
+            <span class="f3">182<small>天</small></span>
+        </li>
+        <li>
+            <a href="#" class="f4">投资</a>
+        </li>
+    </ul>
+    <ul class="regular" style="border-bottom: none;">
+        <li>
+            <span class="f1">定期宝-365天</span>
+            <span class="f2">预期年化</span>
+            <span class="f3">8.30<small>%</small></span>
+        </li>
+        <li>
+            <span class="f2">封闭期</span>
+            <span class="f3">365<small>天</small></span>
+        </li>
+        <li>
+            <a href="#" class="f4">投资</a>
+        </li>
+    </ul>
+  <!--  <div class="more">
+        点击加截更多
+    </div>-->
+</div>
+<div class="foot">
+    <ul>
+        <li>
+            <a href="/index">
+                <img src="image/houseNormal.png">
+                <span class="btn1">首页</span>
+            </a>
+        </li>
+        <li>
+            <img src="image/coinSelect.png">
+            <span class="btn2">理财</span>
+        </li>
+        <li>
+            <a href="">
+                <img src="image/peopleNormal.png">
+                <span class="btn1">我的</span>
+            </a>
+        </li>
+    </ul>
+</div>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            autoplay: 3000,
+            autoplayDisableOnInteraction: false, //每次都会重新启动autoplay
+            loop: "ture"
+        });
+
+        var tabsSwiper = new Swiper('#tabs-container', {
+            speed: 500,
+            onSlideChangeStart: function () {
+                $(".tabs .active").removeClass('active')
+                $(".tabs a").eq(tabsSwiper.activeIndex).addClass('active')
+            }
+        })
+        $(".tabs a").on('touchstart mousedown', function (e) {
+            e.preventDefault()
+            $(".tabs .active").removeClass('active')
+            $(this).addClass('active')
+            tabsSwiper.slideTo($(this).index())
+        })
+        $(".tabs a").click(function (e) {
+            e.preventDefault()
+        })
+
+    </script>
+</body>
+</html>
