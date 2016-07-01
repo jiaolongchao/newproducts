@@ -80,7 +80,7 @@ input{-webkit-appearance: none;}
 .person li i.ico_set6{ background: url("../image/icon_set6.png") no-repeat; background-size: cover;}
 .person li i.ico_set7{ background: url("../image/icon_set7.png") no-repeat; background-size: cover;}
 .person li .ico_val{ position: absolute; right: 0; display: block; top: 0;}
-.person li .arrow,.login li .arrow{ position: absolute; right: 0; top: 0.30rem; width: 0.15rem; height: 0.15rem; border-top: solid 1px #bababa; border-right: solid 1px #bababa; transform: rotate(45deg);}
+.person li .arrow,.login li .arrow,.depbank li .arrow{ position: absolute; right: 0; top: 0.30rem; width: 0.15rem; height: 0.15rem; border-top: solid 1px #bababa; border-right: solid 1px #bababa; transform: rotate(45deg);}
 .person li .ab_arrow{ right: 0.40rem;}
 
 /*银行卡信息*/
@@ -100,15 +100,18 @@ input{-webkit-appearance: none;}
 /*到期设置*/
 .setting{ font-size: 0.26rem; margin-bottom: 0.10rem;}
 .setting li{ padding: 0 0.22rem; height: 0.85rem; line-height: 0.85rem; border-bottom: solid 1px #e1e1e1;}
-.exp,.pro,.lim{ background: #fff;}
+.exp li{ padding-top: 0.20rem; padding-bottom: 0.20rem; height: auto;}
+.exp,.pro,.lim,.withdraw,.depbank{ background: #fff;}
 .roi li span:first-child{ display: inline-block; width: 1.70rem;}
 .exp li span:first-child{display: inline-block; width: 1.30rem;}
 .exp li .exp_a a{ display: inline-block; width: 2.15rem; height: 0.58rem; line-height: 0.58rem; text-align: center; border: solid 1px #c1c1c1; color: #7d7d7d; border-radius: 6px; margin-right: 0.10rem;}
-.exp li .exp_a a.active{ color: #fa7962; border: solid 1px #fa7962;}
+.exp li .exp_a a.active,.pro li .exp_b a.active{ color: #fa7962; border: solid 1px #fa7962;}
 .pro li{ height: auto; line-height: normal; padding-top: 0.18rem;}
 .pro li span:first-child{ display: block; float: left;}
-.pro li span:last-child{ margin-left: 1.70rem; }
-.pro li .exp_b a{ display: inline-block; vertical-align: middle; text-align: center; border: solid 1px #c1c1c1; color: #7d7d7d; border-radius: 6px; margin-right: 0.10rem; margin-bottom: 0.10rem; height: 0.60rem; line-height: 0.60rem; padding: 0 0.10rem;}
-
-
+.pro li span:last-child{ margin-left: 1.70rem; display: block;}
+.pro li .exp_b a{ display: inline-block; vertical-align: middle; text-align: center; border: solid 1px #c1c1c1; color: #7d7d7d; border-radius: 6px; margin-right: 0.10rem; margin-bottom: 0.10rem; height: 0.60rem; line-height: 0.60rem; padding: 0 0.22rem;}
+.withdraw li span:first-child{display: inline-block; width: 2.10rem;}
+.depbank li{ position: relative;}
+.depbank li span:first-child{display: inline-block; width: 1.97rem;}
+.depbank li .arrow{ right: 0.40rem}
 
