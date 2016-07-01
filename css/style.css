@@ -167,3 +167,5 @@ ul, ol { list-style: none; }
 .shortcut .banknumber li .banktext{ color: #515151; font-size: 0.22rem; line-height: 1.5;}
 .limittips{ height: 0.55rem; line-height: 0.55rem; font-size: 0.20rem; }
 .limittips i{ display: inline-block; vertical-align: middle; width: 0.19rem; height: 0.19rem; margin-right: 0.15rem; background: url("../image/icon_tips.png") no-repeat; background-size: cover;}
+
+/*71*/
