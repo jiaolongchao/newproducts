@@ -88,6 +88,27 @@ input{-webkit-appearance: none;}
 .login li{ height: 0.82rem; line-height: 0.82rem; color: #515151; font-size: 0.26rem; position: relative; border-bottom: solid 1px #e1e1e1; padding: 0 0.22rem; }
 .login li span:first-child{ width: 1.95rem; display: inline-block;}
 .login li .arrow{ right: 0.40rem;}
+.login li input{ font-size:0.26rem; border: none; outline: none; background: transparent; }
+.login li input::-webkit-input-placeholder{ color:#d0d0d0;}
 .tips{ font-size: 0.26rem; color: #929292; line-height: 1.8; padding: 0 0.22rem;}
+
+/*身份信息*/
+.waring{ font-size: 0.20rem; color: #908f8f; height: 0.85rem; line-height: 0.85rem; padding: 0 0.22rem; font-size: 0.20rem;}
+.waring i{ width: 0.26rem; height: 0.26rem; display: inline-block; vertical-align: middle; margin-right: 0.20rem;}
+.waring i.icon_waring{ background: url("../image/icon_tips.png") no-repeat; background-size: cover;}
+
+/*到期设置*/
+.setting{ font-size: 0.26rem; margin-bottom: 0.10rem;}
+.setting li{ padding: 0 0.22rem; height: 0.85rem; line-height: 0.85rem; border-bottom: solid 1px #e1e1e1;}
+.exp,.pro,.lim{ background: #fff;}
+.roi li span:first-child{ display: inline-block; width: 1.70rem;}
+.exp li span:first-child{display: inline-block; width: 1.30rem;}
+.exp li .exp_a a{ display: inline-block; width: 2.15rem; height: 0.58rem; line-height: 0.58rem; text-align: center; border: solid 1px #c1c1c1; color: #7d7d7d; border-radius: 6px; margin-right: 0.10rem;}
+.exp li .exp_a a.active{ color: #fa7962; border: solid 1px #fa7962;}
+.pro li{ height: auto; line-height: normal; padding-top: 0.18rem;}
+.pro li span:first-child{ display: block; float: left;}
+.pro li span:last-child{ margin-left: 1.70rem; }
+.pro li .exp_b a{ display: inline-block; vertical-align: middle; text-align: center; border: solid 1px #c1c1c1; color: #7d7d7d; border-radius: 6px; margin-right: 0.10rem; margin-bottom: 0.10rem; height: 0.60rem; line-height: 0.60rem; padding: 0 0.10rem;}
+
 
 
