@@ -1,16 +1,22 @@
 @charset "utf-8";
 /* CSS Document */
-
-body, div, span,  h1, h2, h3, h4, h5, h6, ol, ul, li, dl, dt, dd, form, label, input, table, tbody, pre,p,tr, th, td{-webkit-tap-highlight-color:rgba(0,0,0,0);margin: 0;padding: 0;border: 0;outline: 0;font-family:'Microsoft YaHei',Helvetica,STHeiti STXihei; }
+body, div, span,  h1, h2, h3, h4, h5, h6, ol, ul, li, dl, dt, dd, form, label, input, table, tbody, pre,p,tr, th, td{-webkit-tap-highlight-color:rgba(0,0,0,0);margin: 0;padding: 0;border: 0;outline: 0;font-family:'Microsoft YaHei',Helvetica,STHeiti STXihei; box-sizing: border-box; }
 html{ background: #f2f2f2;}
 body{font-size: 6.25%;width:100%;}
-a,a:active,a:focus{text-decoration:none;}
+a,a:active,a:focus{text-decoration:none; color: #515151;}
 img{ width: 100%; max-width: 100%;}
 ul, ol { list-style: none; }
 input{-webkit-appearance: none;}
 .fl{ float:left;}
 .fr{ float:right;}
+.red{ color:#e60012;}
+.green{ color: #2bb210;}
+.gray{ color: #d0d0d0;}
 .main{position: absolute;top: 0;left: 0;right: 0;bottom: 1.2rem; overflow: auto; }
+.maxH{ bottom: 0;}
+.maxA{ bottom: 0.9rem;}
+.btn{ width: 100%; height: 0.90rem; line-height: 0.90rem; color: #fff; font-size: 0.30rem; text-align: center; background:#fe6246; position: fixed; bottom: 0; }
+.confirm{ margin: 0.40rem 0.22rem 0.45rem 0.22rem; height: 0.90rem; line-height: 0.90rem; color: #fff; font-size: 0.30rem; text-align: center; background:#fe6246;  border-radius: 10px; display: block;}
 .notice{ width: 100%; height: 0.82rem; background: #fff; border-bottom: solid 1px #d8d6d6; text-align: left; font-size: 0.26rem; color: #656565; position: relative; overflow: hidden;}
 .notice > span{ width: 0.27rem; height: 0.25rem; position: absolute; left:0.23rem; top:0.28rem; }
 .notice .notice_scroll{ margin-left: 0.65rem;}
@@ -56,5 +62,32 @@ input{-webkit-appearance: none;}
 .guarantee span{ width: 0.32rem; height: 0.32rem; display: inline-block; vertical-align: middle; margin: 0 0.25rem 0 0; }
 .title{ width: 100%; text-align: center; font-size:0.26rem; color: #6c6c6c; border-bottom: solid 1px #cacbcb; background: #fff; height: 0.68rem; line-height: 0.68rem;}
 .more{ color: #cbcbcb; font-size: 0.22rem; text-align: center; background: #efefef; border-radius: 3px; margin: 0.37rem 0.3rem; padding: 0.07rem 0;}
+
+/*个人中心*/
+.message{ height: 2.27rem; background: url('../image/total_assets.jpg') no-repeat; background-size: cover; padding: 0.50rem 0.22rem 0 0.22rem;}
+.message .header{ width: 1.07rem; height: 1.07rem; border: solid 2px #fff; border-radius: 50%; overflow: hidden; background: #dee2eb; float: left;}
+.message .meslist{ margin-left: 1.35rem; padding-top: 0.16rem; color: #fff; font-size: 0.28rem; line-height: 1.5;}
+.message .meslist li{ height: 0.45rem; line-height: 0.45rem;}
+.person{ border-top:solid 1px #e1e1e1; border-bottom: solid 1px #e1e1e1; padding: 0 0.22rem; background: #fff; margin-bottom: 0.10rem;}
+.person li{ height: 0.82rem; line-height: 0.82rem; color: #515151; font-size: 0.26rem; position: relative; border-bottom: solid 1px #e1e1e1;}
+.person li:last-child{ border-bottom: none;}
+.person li i{ display: inline-block; width: 0.41rem;height: 0.39rem; vertical-align: middle; margin-right: 0.36rem;}
+.person li i.ico_set1{ background: url("../image/icon_set1.png") no-repeat; background-size: cover;}
+.person li i.ico_set2{ background: url("../image/icon_set2.png") no-repeat; background-size: cover;}
+.person li i.ico_set3{ background: url("../image/icon_set3.png") no-repeat; background-size: cover;}
+.person li i.ico_set4{ background: url("../image/icon_set4.png") no-repeat; background-size: cover;}
+.person li i.ico_set5{ background: url("../image/icon_set5.png") no-repeat; background-size: cover;}
+.person li i.ico_set6{ background: url("../image/icon_set6.png") no-repeat; background-size: cover;}
+.person li i.ico_set7{ background: url("../image/icon_set7.png") no-repeat; background-size: cover;}
+.person li .ico_val{ position: absolute; right: 0; display: block; top: 0;}
+.person li .arrow,.login li .arrow{ position: absolute; right: 0; top: 0.30rem; width: 0.15rem; height: 0.15rem; border-top: solid 1px #bababa; border-right: solid 1px #bababa; transform: rotate(45deg);}
+.person li .ab_arrow{ right: 0.40rem;}
+
+/*银行卡信息*/
+.login{ background: #fff; margin-bottom: 0.10rem; border-top: solid 1px #e1e1e1;}
+.login li{ height: 0.82rem; line-height: 0.82rem; color: #515151; font-size: 0.26rem; position: relative; border-bottom: solid 1px #e1e1e1; padding: 0 0.22rem; }
+.login li span:first-child{ width: 1.95rem; display: inline-block;}
+.login li .arrow{ right: 0.40rem;}
+.tips{ font-size: 0.26rem; color: #929292; line-height: 1.8; padding: 0 0.22rem;}
 
 
