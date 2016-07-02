@@ -178,7 +178,7 @@ i,em{ font-style: normal}
 .seven_tiyan .limiting li:nth-of-type(1) i{ background: url("../image/icon_s1.png") no-repeat; background-size: cover;}
 .seven_tiyan .limiting li:nth-of-type(2) i{ background: url("../image/icon_s2.png") no-repeat; background-size: cover;}
 .seven_tiyan .limiting li:nth-of-type(3) i{ background: url("../image/icon_s3.png") no-repeat; background-size: cover;}
-.pros_box{ background: #fff; border-top: solid 1px #e1e1e1;}
+.pros_box{ background: #fff; border-top: solid 1px #e1e1e1; overflow: hidden;}
 .pros_box .risk{ font-size: 0.16rem; text-align: center; display: block; line-height: 0.46rem; height: 0.46rem; color: #adacac;}
 .pros{ overflow: hidden;}
 .pros a{ float: left; width: 33.1%; height: 0.56rem; line-height: 0.56rem; float: left; font-size: 0.24rem; color: #6c6c6c; text-align: center; border-bottom: solid 1px #c5c5c5; border-right: solid 1px #c5c5c5;}
