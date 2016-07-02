@@ -168,4 +168,20 @@ ul, ol { list-style: none; }
 .limittips{ height: 0.55rem; line-height: 0.55rem; font-size: 0.20rem; }
 .limittips i{ display: inline-block; vertical-align: middle; width: 0.19rem; height: 0.19rem; margin-right: 0.15rem; background: url("../image/icon_tips.png") no-repeat; background-size: cover;}
 
-/*71*/
+/*个人设置*/
+.tabs_main{  border-top: solid 1px #e1e1e1; margin-top: 0.10rem;}
+.tabs_main .tabs > a{ display: block; float: left; height:0.75rem; line-height: 0.75rem; border-bottom: solid 2px #e1e1e1; width: 50%; text-align: center;  font-size: 0.26rem; color: #6c6c6c; background: #fff;}
+.tabs_main .tabs > a.active{ border-bottom: solid 2px #00a2c7; color: #00a2c7;}
+.tabs_main .investing{ margin-bottom: 0.10rem; background: #fff;}
+.tabs_main .investing .tab-con{ display: flex; flex-wrap: nowrap; flex-direction: row; justify-content: space-between; padding: 0 0.22rem; border-bottom: solid 1px #e1e1e1;}
+.tabs_main .investing .tab-top{ height: 0.85rem; line-height: 0.85rem; color: #6c6c6c; font-size: 0.26rem;}
+.tabs_main .investing .tab-top small{ font-size: 0.15rem; color: #b2b2b2; padding-left: 0.10rem;}
+.tabs_main .investing .tab-top .set{ display: inline-block; color: #e90101; border: solid 1px #e90101; width: 1.20rem; height: 0.45rem; line-height: 0.45rem; text-align: center; border-radius: 5px;}
+
+.tabs_main .investing .tab_box{padding-top: 0.35rem ; padding-bottom: 0.25rem;  border-bottom: solid 1px #e1e1e1;}
+.tabs_main .investing .tab-bottom{  font-size: 0.40rem; line-height: 1.55; color: #5c5c5c; background-image: url("../image/line.png"),url("../image/line.png"); background-position:33.3% 0 , 70.6% 0; background-repeat:  no-repeat, no-repeat; border-bottom: none;}
+
+/*.tabs_main .investing .tab-bottom li{ width: 100%; border-right: dotted 1px #e1e1e1;}
+.tabs_main .investing .tab-bottom li:last-child{ border-right: none;}
+.tabs_main .investing .tab-bottom li > span{ width: 1.35rem; display: block; text-align: left;}*/
+.tabs_main .investing .tab-bottom li > span span{ display: block; font-size: 0.18rem; color: #555555;}
