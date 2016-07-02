@@ -6,6 +6,7 @@ body{font-size: 6.25%;width:100%;}
 a,a:active,a:focus{text-decoration:none; color: #515151;}
 img{ width: 100%; max-width: 100%;}
 ul, ol { list-style: none; }
+i,em{ font-style: normal}
 /*input{-webkit-appearance: none;}*/
 .fl{ float:left;}
 .fr{ float:right;}
@@ -167,6 +168,29 @@ ul, ol { list-style: none; }
 .shortcut .banknumber li .banktext{ color: #515151; font-size: 0.22rem; line-height: 1.5;}
 .limittips{ height: 0.55rem; line-height: 0.55rem; font-size: 0.20rem; }
 .limittips i{ display: inline-block; vertical-align: middle; width: 0.19rem; height: 0.19rem; margin-right: 0.15rem; background: url("../image/icon_tips.png") no-repeat; background-size: cover;}
+.seven_tiyan{ height: 2.06rem; border-bottom: solid 1px #e1e1e1; background: url("../image/seven.jpg") no-repeat; background-size: cover; position: relative; margin-bottom: 0.10rem;}
+.seven_tiyan .newbie{ position: absolute; top: 0.32rem; left: 0.24rem; border: solid 1px #0095fc; font-size: 0.20rem; color: #0095fc; padding: 0 0.10rem; height: 0.28rem; line-height: 0.28rem; border-radius: 0.50rem;  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 144, 255, 1)), to(rgba(0, 187, 230, 1)));  -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+.seven_tiyan .interest{ position: absolute; top: 0.84rem; left:2.32rem;  color: #fe6246; font-size: 0.60rem;}
+.seven_tiyan .interest small{ font-size: 0.40rem;}
+.seven_tiyan .interest .subtitle{ display: inline-block; font-size: 0.20rem; color: #9c9c9c; padding-left: 0.20rem;}
+.seven_tiyan .limiting{ width: 4.96rem; height: 0.52rem; line-height: 0.52rem; font-size:0.18rem;  position: absolute; bottom: 0; left: 50%; margin-left: -2.48rem; display: flex; flex-wrap: nowrap; flex-direction: row; justify-content: space-between; color: #9c9c9c;}
+.seven_tiyan .limiting li > i{ display: inline-block; vertical-align: middle; width: 0.22rem; height: 0.19rem; margin-right: 0.08rem;}
+.seven_tiyan .limiting li:nth-of-type(1) i{ background: url("../image/icon_s1.png") no-repeat; background-size: cover;}
+.seven_tiyan .limiting li:nth-of-type(2) i{ background: url("../image/icon_s2.png") no-repeat; background-size: cover;}
+.seven_tiyan .limiting li:nth-of-type(3) i{ background: url("../image/icon_s3.png") no-repeat; background-size: cover;}
+.pros_box{ background: #fff; border-top: solid 1px #e1e1e1;}
+.pros_box .risk{ font-size: 0.16rem; text-align: center; display: block; line-height: 0.46rem; height: 0.46rem; color: #adacac;}
+.pros{ overflow: hidden;}
+.pros a{ float: left; width: 33.1%; height: 0.56rem; line-height: 0.56rem; float: left; font-size: 0.24rem; color: #6c6c6c; text-align: center; border-bottom: solid 1px #c5c5c5; border-right: solid 1px #c5c5c5;}
+.pros a:last-child{ border-right: none;}
+.pros a.active{ border-bottom: none;}
+.pro-list .swiper-slide{ padding: 0.45rem 0.22rem 0 0.22rem; font-size: 0.20rem; color: #9c9c9c;}
+.pro-list .swiper-slide .title{ display: block; text-align: left; color: #9c9c9c; border-left:solid 3px #fe6246; height: 0.20rem; line-height: 0.20rem; padding-left: 0.07rem; border-bottom: none; margin-bottom: 0.14rem;}
+.pro-list .swiper-slide .pro-con{ margin-left: 0.12rem; margin-bottom: 0.47rem;}
+.pro-list .swiper-slide .pro-con li{ line-height: 1.8;}
+.pro-list .swiper-slide .pro-con li > i{ display: block; float: left;}
+.pro-list .swiper-slide .pro-con li > span{ display: block; margin-left:0.18rem; }
+
 
 /*个人设置*/
 .tabs_main{  border-top: solid 1px #e1e1e1; margin-top: 0.10rem;}
